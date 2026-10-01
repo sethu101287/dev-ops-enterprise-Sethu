@@ -44,8 +44,15 @@ The repository is being expanded in phases. The current foundation includes Java
 - Java application scaffolded
 - REST API implemented
 - Unit tests added
-- Git initialized
-- Linux validation executed
-- Maven validation pending/being run
+- Git initialized; Phase 1 foundation committed as `bc03a75`
+- Previous Surefire report records 2 passing tests; current Maven validation is pending
+- Linux validation is pending because WSL is not installed in the current Windows environment
+- Jenkins and later phases are out of scope until Phase 1 validation is complete
 
 This repository is intentionally staged for hands-on enterprise learning and interview preparation.
+
+## Existing build evidence
+
+An existing Surefire report records a successful earlier test run. This is historical evidence and has not been reproduced in the current environment.
+
+The current Windows shell has Java 25 available but no `mvn` command. The project targets Java 21. WSL is also not installed, so Linux command validation remains pending. The next step is to prepare a Linux environment, then validate the Java/Maven build before proceeding beyond Phase 1.
